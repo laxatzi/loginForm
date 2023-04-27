@@ -45,3 +45,125 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
   hyphens: auto;
 }
+
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  min-width: 450px;
+  height: auto;
+  border: 1px solid var(--colorSecond);
+  border-radius: 5px;
+  margin: 10% auto;
+  padding: 25px 50px;
+  background-color: var(--bgColor);
+  color: var(--colorMain);
+  box-shadow: 1px 2px 2px var(--colorSecond);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#form-container h2 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+#form-container h2:before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background: var(--colorSecond);
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+
+#form-container h2:after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background: var(--colorSecond);
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+
+#form-container h3 {
+  text-align: center;
+  font-size: .75rem;
+  color: var(--colorDist);
+  font-weight: bold;
+}
+
+#form-container a {
+  text-decoration: none;
+  color: var(--colorDist);
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+
+.form-control.legal { display: block; }
+.form-control.legal input { margin-right: 10px; }
+.form-control.legal label { font-size: .85rem; }
+
+/* Colors indicating success or not */
+small {
+  visibility: hidden;
+  font-size: .85rem;
+  color: var(--colorDistSecond);
+  font-family: consolas, monospace;
+  letter-spacing: -1px;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.hidden{
+  display:none;
+}
+/* .form-control.error input {
+  border-color: var(--colorDistSecond);
+}
+
+.form-control.success input {
+  border-color: var(--colorDist);
+} */
+
+.form-control.error .input-field {
+  border-color: var(--colorDistSecond);
+}
+
+.form-control.success .input-field {
+  border-color: var(--colorDist);
+}
+
+input,
+button {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+input {
+  border: none;
+}
+
+input::placeholder {
+  font-size: .85rem;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  background-color: var(--colorDist);
+  border: 1px solid var(--colorDist);
+  margin-top: .5rem;
+}
