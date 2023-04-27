@@ -1,4 +1,11 @@
-
+:root {
+  --colorMain: #535354;
+  --colorSecond: #c0bebe;
+  --colorDist: #28A745;
+  --colorDistSecond: #D7403A;
+  --bgColor: #F2F3F7;
+  --colorBody: #7e90aa;
+}
 /*
   Make box-sizing flexible
 */
