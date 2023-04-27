@@ -147,10 +147,6 @@ button {
   border-radius: 5px;
 }
 
-input {
-  border: none;
-}
-
 input::placeholder {
   font-size: .85rem;
 }
@@ -162,3 +158,70 @@ button {
   border: 1px solid var(--colorDist);
   margin-top: .5rem;
 }
+
+.promptToRegister p {
+  font-size: .85rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.promptToRegister a {
+  font-weight: bold;
+}
+
+.sr-only {
+  border:0;
+  padding: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  word-wrap:normal !important;
+}
+
+span[data-info='show']::after {
+  content: "Show";
+  right: 0;
+  top: 0;
+}
+
+span[data-info='hide']::after {
+  content: "Hide";
+  right: 0;
+  top:0;
+}
+
+.eye-visibility {
+  color: var(--colorDist);
+  margin-right: 10px;
+  line-height: 2.5rem;
+  font-size: .75rem;
+}
+
+.input-field {
+  display: flex;
+  background-color: white;
+  border: 1px solid var(--colorSecond);
+  border-radius: 5px;
+}
+
+ion-icon {
+  font-size: 1.55rem;
+  padding: 8px;
+  color: var(--colorDist);
+}
+
+#password { border: none; }
+
+.input-field input { flex: 8; }
+.input-field ion-icon { flex: 1; }
+
+
+
+
+
+
+
