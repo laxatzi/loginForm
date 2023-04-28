@@ -132,6 +132,7 @@ small {
 input,
 button {
   padding: 8px;
+  border-radius: 5px;
 }
 
 input::placeholder {
@@ -191,8 +192,8 @@ span[data-info='hide']::after {
 .input-field {
   display: flex;
   background-color: white;
-  border: 1px solid var(--colorSecond);
-  border-radius: 5px;
+  /* border: 1px solid red;
+  border-radius: 5px; */
 }
 
 ion-icon {
@@ -201,7 +202,7 @@ ion-icon {
   color: var(--colorDist);
 }
 
-#password { border: none; }
+/* #password { border: none; } */
 
 .input-field input { flex: 8; }
 .input-field ion-icon { flex: 1; }
