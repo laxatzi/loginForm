@@ -20,10 +20,6 @@
   padding: 0;
   line-height: calc(1em + 0.5rem);
 }
-*:focus,
-*:active {
-  outline: 3px solid var(--colorBody);
-}
 /*
   Allow percentage-based heights in the application-- set box-sizing
 */
@@ -52,7 +48,6 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
   hyphens: auto;
 }
-
 
 #form-container {
   display: flex;
@@ -98,13 +93,6 @@ p, h1, h2, h3, h4, h5, h6 {
   position: absolute;
 }
 
-#form-container h3 {
-  text-align: center;
-  font-size: .75rem;
-  color: var(--colorDist);
-  font-weight: bold;
-}
-
 #form-container a {
   text-decoration: none;
   color: var(--colorDist);
@@ -144,7 +132,6 @@ small {
 input,
 button {
   padding: 8px;
-  border-radius: 5px;
 }
 
 input::placeholder {
